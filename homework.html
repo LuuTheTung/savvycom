@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weekend Homework </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .hello {
+            color: red;
+        }
+
+        #id {
+            color: aqua;
+        }
+
+        .descendant .des-sel {
+            color: blueviolet;
+        }
+
+        .child-sel>.des-child {
+            color: brown;
+        }
+
+        .para-1,
+        .para-2,
+        .para-3 {
+            color: burlywood;
+        }
+
+        .combination.active {
+            color: chocolate;
+        }
+
+        .sibling-a + .sibling-b {
+            color: fuchsia;
+        }
+
+        .sib-a ~ .sib-b {
+            color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>How to use CSS Selectors</h1>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-sm-4">
+                <ul>
+                    <li><a href="#basic">Basic CSS Selector</a></li>
+                    <li>
+                        <a href="#descendant">Descendant CSS Selector</a>
+                        <ul>
+                            <li><a href="#any-descendant">Any descendant selector</a></li>
+                            <li><a href="#child-descendant">Child Selector</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#multiple">Multiple CSS Selector</a></li>
+                    <li><a href="#combination">Combination CSS Selector</a></li>
+                    <li><a href="#sibling">Sibling CSS Selector</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-12" id="basic">
+                        <h3>Basic CSS Selector</h3>
+                        <p class="hello">Simple class name</p>
+                        <p id="id">Other simple class with id</p>
+                    </div>
+
+                    <div class="col-sm-12 descendant" id="descendant">
+                        <h3>Descendant CSS Selector</h3>
+                        <p id="any-descendant">Any descendant selector</p>
+                        <div class="des-sel">Descendant 1</div>
+                        <div>
+                            <div class="des-sel">Descendant 2</div>
+                        </div>
+                        <br>
+                        <p id="child-descendant">Child Selector</p>
+                        <div class="child-sel">
+                            <div class="des-child">Child 1</div>
+                            <div>
+                                <div class="des-child">Child 2</div>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="col-sm-12" id="multiple">
+                        <h3>Multiple CSS Selector</h3>
+                        <p class="para-1">Paragraph 1</p>
+                        <p class="para-2">Paragraph 2</p>
+                        <p class="para-3">Paragraph 3</p>
+                    </div>
+
+                    <div class="col-sm-12" id="combination">
+                        <h3>Combination CSS Selector</h3>
+                        <p class="combination active">Paragraph with active class</p>
+                        <p class="combination">Paragraph without active class</p>
+                    </div>
+
+                    <div class="col-sm-12" id="sibling">
+                        <h3>Sibling CSS Selector</h3>
+                        <p>Sibling A + B</p>
+                        <div class="sibling-a">Sibling A</div>
+                        <div class="sibling-b">Sibling B</div>
+                        <div class="sibling-b">Sibling C</div>
+                        <br>
+                        <p>Sibling A ~ B</p>
+                        <div class="sib-a">Sibling A</div>
+                        <div class="sib-b">Sibling B</div>
+                        <div class="sib-b">Sibling C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
