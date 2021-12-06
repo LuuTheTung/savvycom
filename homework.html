@@ -1,123 +1,233 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Weekend Homework </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <title>Weekend Homework</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        .hello {
-            color: red;
-        }
+      .hello {
+        color: red;
+      }
 
-        #id {
-            color: aqua;
-        }
+      #id {
+        color: aqua;
+      }
 
-        .descendant .des-sel {
-            color: blueviolet;
-        }
+      .descendant .des-sel {
+        color: blueviolet;
+      }
 
-        .child-sel>.des-child {
-            color: brown;
-        }
+      .child-sel > .des-child {
+        color: brown;
+      }
 
-        .para-1,
-        .para-2,
-        .para-3 {
-            color: burlywood;
-        }
+      .para-1,
+      .para-2,
+      .para-3 {
+        color: burlywood;
+      }
 
-        .combination.active {
-            color: chocolate;
-        }
+      .combination.active {
+        color: chocolate;
+      }
 
-        .sibling-a + .sibling-b {
-            color: fuchsia;
-        }
+      .combination {
+        color: darkred;
+      }
 
-        .sib-a ~ .sib-b {
-            color: dodgerblue;
-        }
+      .sibling-a + .sibling-b {
+        color: fuchsia;
+      }
+
+      .sib-a ~ .sib-b {
+        color: dodgerblue;
+      }
+
+      .psudo-selector:nth-last-child(3) {
+        color: chartreuse;
+      }
+
+      .only-child:only-child {
+        color: gold;
+      }
+
+      .type-selector div:first-of-type {
+        color: darkgreen;
+      }
+
+      .type-selector div:nth-of-type(2) {
+        color: darkorange;
+      }
+
+      .type-selector span:last-of-type {
+        color: hotpink;
+      }
+
+      .pseudo-link:visited {
+        color: darkslateblue;
+      }
+      .pseudo-link:link {
+        color: goldenrod;
+      }
+      .pseudo-link:hover {
+        color: red;
+      }
+      .pseudo-link:active {
+        color: blue;
+      }
+
+      div[for] {
+        color: red;
+      }
+      div[for^="cho"] {
+        color: magenta;
+      }
+      div[for$="ate"] {
+        color: indianred;
+      }
+      div[class*="test"] {
+        color: cyan;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="jumbotron text-center">
-        <h1>How to use CSS Selectors</h1>
+      <h1>How to use CSS Selectors</h1>
     </div>
     <div>
-        <div class="row">
-            <div class="col-sm-4">
-                <ul>
-                    <li><a href="#basic">Basic CSS Selector</a></li>
-                    <li>
-                        <a href="#descendant">Descendant CSS Selector</a>
-                        <ul>
-                            <li><a href="#any-descendant">Any descendant selector</a></li>
-                            <li><a href="#child-descendant">Child Selector</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#multiple">Multiple CSS Selector</a></li>
-                    <li><a href="#combination">Combination CSS Selector</a></li>
-                    <li><a href="#sibling">Sibling CSS Selector</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-8">
-                <div class="row">
-                    <div class="col-sm-12" id="basic">
-                        <h3>Basic CSS Selector</h3>
-                        <p class="hello">Simple class name</p>
-                        <p id="id">Other simple class with id</p>
-                    </div>
-
-                    <div class="col-sm-12 descendant" id="descendant">
-                        <h3>Descendant CSS Selector</h3>
-                        <p id="any-descendant">Any descendant selector</p>
-                        <div class="des-sel">Descendant 1</div>
-                        <div>
-                            <div class="des-sel">Descendant 2</div>
-                        </div>
-                        <br>
-                        <p id="child-descendant">Child Selector</p>
-                        <div class="child-sel">
-                            <div class="des-child">Child 1</div>
-                            <div>
-                                <div class="des-child">Child 2</div>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="col-sm-12" id="multiple">
-                        <h3>Multiple CSS Selector</h3>
-                        <p class="para-1">Paragraph 1</p>
-                        <p class="para-2">Paragraph 2</p>
-                        <p class="para-3">Paragraph 3</p>
-                    </div>
-
-                    <div class="col-sm-12" id="combination">
-                        <h3>Combination CSS Selector</h3>
-                        <p class="combination active">Paragraph with active class</p>
-                        <p class="combination">Paragraph without active class</p>
-                    </div>
-
-                    <div class="col-sm-12" id="sibling">
-                        <h3>Sibling CSS Selector</h3>
-                        <p>Sibling A + B</p>
-                        <div class="sibling-a">Sibling A</div>
-                        <div class="sibling-b">Sibling B</div>
-                        <div class="sibling-b">Sibling C</div>
-                        <br>
-                        <p>Sibling A ~ B</p>
-                        <div class="sib-a">Sibling A</div>
-                        <div class="sib-b">Sibling B</div>
-                        <div class="sib-b">Sibling C</div>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <ol>
+            <li><a href="#basic">Basic CSS Selector</a></li>
+            <li>
+              <a href="#descendant">Descendant CSS Selector</a>
+              <ul>
+                <li><a href="#any-descendant">Any descendant selector</a></li>
+                <li><a href="#child-descendant">Child Selector</a></li>
+              </ul>
+            </li>
+            <li><a href="#multiple">Multiple CSS Selector</a></li>
+            <li><a href="#combination">Combination CSS Selector</a></li>
+            <li><a href="#sibling">Sibling CSS Selector</a></li>
+            <li><a href="#pseudo">Pseudo CSS Selector</a></li>
+            <li><a href="#link-selector">Pseudo-Selector (links và input)</a></li>
+            <li><a href="#attribute-selector">Attribute CSS Selector</a></li>
+          </ol>
         </div>
-    </div>
-</body>
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-12" id="basic">
+              <h3>Basic CSS Selector</h3>
+              <p class="hello">Simple class name</p>
+              <p id="id">Other simple class with id</p>
+            </div>
 
+            <div class="col-sm-12 descendant" id="descendant">
+              <h3>Descendant CSS Selector</h3>
+              <p id="any-descendant">Any descendant selector</p>
+              <div class="des-sel">Descendant 1</div>
+              <div>
+                <div class="des-sel">Descendant 2</div>
+              </div>
+              <br />
+              <p id="child-descendant">Child Selector</p>
+              <div class="child-sel">
+                <div class="des-child">Child 1</div>
+                <div>
+                  <div class="des-child">Child 2</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12" id="multiple">
+              <h3>Multiple CSS Selector</h3>
+              <p class="para-1">Paragraph 1</p>
+              <p class="para-2">Paragraph 2</p>
+              <p class="para-3">Paragraph 3</p>
+            </div>
+
+            <div class="col-sm-12" id="combination">
+              <h3>Combination CSS Selector</h3>
+              <p class="combination active">Paragraph with active class</p>
+              <p class="combination">Paragraph without active class</p>
+            </div>
+
+            <div class="col-sm-12" id="sibling">
+              <h3>Sibling CSS Selector</h3>
+              <p>Sibling A + B</p>
+              <div class="sibling-a">Sibling A</div>
+              <div class="sibling-b">Sibling B</div>
+              <div class="sibling-b">Sibling C</div>
+              <br />
+              <p>Sibling A ~ B</p>
+              <div class="sib-a">Sibling A</div>
+              <div class="sib-b">Sibling B</div>
+              <div class="sib-b">Sibling C</div>
+            </div>
+
+            <div class="col-sm-12" id="pseudo">
+              <h3>Pseudo CSS Selector</h3>
+              <div>
+                <p>Many childs</p>
+                <ul>
+                  List childs:
+                  <li class="psudo-selector">First Child :first-child</li>
+                  <li class="psudo-selector">Second Child :nth-child(2)</li>
+                  <li class="psudo-selector">Third Child :nth-child(3)</li>
+                  <li class="psudo-selector">
+                    Forth Child :nth-child(4) or :nth-last-child(2)
+                  </li>
+                  <li class="psudo-selector">Last Child :last-child</li>
+                </ul>
+              </div>
+              <p>Only Child</p>
+              <div>
+                <div class="only-child">Child A</div>
+              </div>
+              <div>
+                <p>Type Selector</p>
+                <div class="type-selector">
+                  <div>First type selector div:first-of-type</div>
+                  <div>Second type selector div:nth-of-type(2)</div>
+                  <span>Third type selector</span>
+                  <br />
+                  <span>Last type selector span:last-of-type</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12" id="link-selector">
+              <h3>Pseudo-Selector (links và input)</h3>
+              <a class="pseudo-link" href="#">Pseudo link</a>
+              <div class="pseudo-link">Div hover</div>
+            </div>
+
+            <div class="col-sm-12" id="attribute-selector">
+              <h3>Attribute CSS Selector</h3>
+              <div for="candy">div[for]</div>
+              <div for="peanut">div[for]</div>
+              <div>div</div>
+              <br />
+              <div for="chocolat">div[for^="choco"]</div>
+              <div for="chocola">div[for^="choco"]</div>
+              <div for="chocohala">div[for^="choco"]</div>
+              <br />
+              <div for="late">div[for$="er"]</div>
+              <div for="late">div[for$="er"]</div>
+              <div for="late">div[for$="er"]</div>
+              <br />
+              <div class="test">div[for*="it"]</div>
+              <div class="test">div[for*="it"]</div>
+              <div class="test">div[for*="it"]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
