@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BEM CSS</title>
+
+    <style>
+      .content {
+        margin: 20px;
+      }
+      .content__label--padding {
+        padding: 5px;
+      }
+      .content__input--padding{
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h2>Apply BEM in HTML Forms</h2>
+
+      <form action="">
+        <label for="fname" class="content__label--padding">First name:</label
+        ><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          class="content__input--padding"
+        /><br />
+        <label for="lname" class="content__label--padding">Last name:</label
+        ><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          class="content__input--padding"
+        /><br />
+        <label for="phone" class="content__label--padding">Phone number:</label
+        ><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="content__input--padding"
+        /><br />
+        <label for="address" class="content__label--padding">Address:</label
+        ><br />
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          class="content__input--padding"
+        /><br />
+        <label for="email" class="content__label--padding">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="content__input--padding"
+        /><br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+      /* simple css */
       .hello {
         color: red;
       }
@@ -17,6 +18,7 @@
         color: aqua;
       }
 
+      /* descendant css */
       .descendant .des-sel {
         color: blueviolet;
       }
@@ -25,12 +27,14 @@
         color: brown;
       }
 
+      /* multiple css */
       .para-1,
       .para-2,
       .para-3 {
         color: burlywood;
       }
 
+      /* combination css */
       .combination.active {
         color: chocolate;
       }
@@ -39,6 +43,7 @@
         color: darkred;
       }
 
+      /* sibling css */
       .sibling-a + .sibling-b {
         color: fuchsia;
       }
@@ -47,6 +52,7 @@
         color: dodgerblue;
       }
 
+      /* pseudo css */
       .psudo-selector:nth-last-child(3) {
         color: chartreuse;
       }
@@ -80,6 +86,7 @@
         color: blue;
       }
 
+      /* attribute css */
       div[for] {
         color: red;
       }
