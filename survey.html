@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(254, 236, 225);
+        }
+
+        .content {
+            margin: 20px;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+
+        .content--center {
+            text-align: center;
+        }
+
+        .content__form {
+            width: 800px;
+            margin: 0px auto;
+            background-color: white;
+            border-radius: 4%;
+            padding: 30px;
+        }
+
+        .content__form__label {
+            padding-top: 10px;
+        }
+
+        .content__form__button {
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1 id="title" class="content--center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="content--center">Thank you for taking the time to help us improve the platform</p>
+        <form action="" id="survey-form" class="content__form">
+            <div class="row">
+                <div class="col content__form__label">
+                    <label for="name" id="name-label">Name:</label>
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col content__form__label">
+                    <label for="email" id="email-label">Email:</label>
+                </div>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col content__form__label">
+                    <label for="number" id="number-label">Age:</label>
+                </div>
+                <div class="col-md-12">
+                    <input type="number" class="form-control" id="number" name="number" min="9" max="100" placeholder="Age" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col content__form__label">
+                    <label for="role">Which option best describes your current role?</label>
+                </div>
+                <div class="col-md-12">
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col content__form__label">
+                    <label for="user-recommend">Would you recommend freeCodeCamp to a friend?</label><br>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="definitely"
+                                name="user-recommend">Definitely
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="maybe" name="user-recommend">Maybe
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="not-sure" name="user-recommend">Not sure
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col content__form__label">
+                    <label for="prefer">What would you like to see improved? (Check all that apply)</label>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="front-end-projects">Front-end
+                            Projects
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="back-end-projects">Back-end Projects
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="data-visualization">Data
+                            Visualization
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="challenges">Challenges
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="open-source-community">Open
+                            Source Community
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="gitter-help-rooms">Gitter
+                            help rooms
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="videos">Videos
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="forum">Forum
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col content__form__label">Any comments or suggestions?</div>
+                <div class="col-md-12">
+                    <textarea class="form-control" rows="6" cols="5" id="comment"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col content__form__button">
+                    <button type="submit" class="btn btn-success" id="submit">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
