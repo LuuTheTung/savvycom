@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <title>Grid Practice</title>
+  <style>
+    #example1 {
+      background-image: url(http://fs.quantrimang.com/photos/image/2019/04/24/multiplebackground-4.png), url(http://fs.quantrimang.com/photos/image/2019/04/24/multiplebackground-1.jpg);
+      background-position: right bottom, left top;
+      background-repeat: no-repeat, repeat;
+      padding: 15px;
+      width: 50%;
+    }
+
+    h1 {
+      text-shadow: 0 0 3px red;
+    }
+
+    #boxshadow {
+      position: relative;
+      box-shadow: 1px 2px 4px 5px rgba(0, 0, 0, .5);
+      padding: 10px;
+      background: white;
+    }
+  </style>
+</head>
+
+<body id="example1">
+  <h1>Responsive Columns</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="row" id="boxshadow">
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+  </div>
+  <p>The columns will automatically stack on top of each other when the screen </p>
+  <div class="row">
+    <div class="col-md-3" style="background-color:lavender;">.col-md-3</div>
+    <div class="col-md-3" style="background-color:lavenderblush;">.col-md-3</div>
+    <div class="col-md-3" style="background-color:lavender;">.col-md-3</div>
+    <div class="col-md-3" style="background-color:lavenderblush;">.col-md-3</div>
+  </div>
+  <p>The columns will automatically stack on top of each other when the screen </p>
+  <div class="row">
+    <div class="col-lg-3" style="background-color:lavender;">.col-lg-3</div>
+    <div class="col-lg-3" style="background-color:lavenderblush;">.col-lg-3</div>
+    <div class="col-lg-3" style="background-color:lavender;">.col-lg-3</div>
+    <div class="col-lg-3" style="background-color:lavenderblush;">.col-lg-3</div>
+  </div>
+
+  <h1>Multiple Background</h1>
+  <p>Phần tử div có hai background chồng lên nhau:</p>
+
+  <div>
+    <h1>Website Quản Trị Mạng</h1>
+    <p>Quantrimang.com là mạng xã hội về khoa học công nghệ, đáp ứng nhu cầu về
+      nhiều lĩnh vực công nghệ hơn như điện thoại, thiết bị thông minh, điện tử,
+      bảo mật máy tính...</p>
+    <p>Bạn có thể trở thành một phần của Quantrimang.com bằng cách gửi bài viết,
+      trải nghiệm công nghệ của mình về cho đội ngũ quản lý.</p>
+  </div>
+</body>
+
+</html>
