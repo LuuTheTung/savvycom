@@ -35,7 +35,7 @@ let convert = () => {
     if(arrJSON.length <= 1 ){
         for (const property in cloneObject) {
             if (typeof cloneObject[property] == "string") {
-                csvStr += '\'\' ,' + property + ',' + cloneObject[property] + "\n";
+                csvStr += '\"\",' + property + ',' + cloneObject[property] + "\n";
             }
             if (typeof cloneObject[property] == "object") {
                 for (const subProperty in cloneObject[property]) {
@@ -74,7 +74,7 @@ let convert = () => {
         }
         for (const property in cloneObject) {
             if (typeof cloneObject[property] == "string") {
-                csvStr += '\'\' ,' + property + ',' + cloneObject[property] + "\n";
+                csvStr += '\"\",' + property + ',' + cloneObject[property] + "\n";
             }
             if (typeof cloneObject[property] == "object") {
                 for (const subProperty in cloneObject[property]) {
