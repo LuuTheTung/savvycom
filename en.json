@@ -1,0 +1,24 @@
+{
+"Title": {
+"Balance": "My Balance",
+"Home": "Home",
+"Feed": "Feed",
+"Bookmark": "Bookmarks",
+"Events": "Events",
+"EditProfile": "Edit Profile",
+"TalentAgency": "Talent Agency",
+"Settings": "Settings",
+"Support": "Help & Support",
+"PageNotFound": "PageNotFound",
+"LivestreamDashboard": "Livestream Dashboard"
+},
+"SocialType": {
+"Facebook": "Facebook",
+"Instagram": "Instagram",
+"Youtube": "Youtube"
+},
+"Creator": "Super Rookie",
+"Star": "Super Star",
+"Nova": "Super Nova",
+"Account": "Social Accounts"
+}

@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Convert file</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style>
+        .content {
+            margin: 30px;
+            font-family: Tahoma, Verdana, sans-serif;
+            padding-top: 60px;
+        }
+        .button--top {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Convert JSON to CSV</h2>
+                <p>Upload a JSON file</p>
+                <div class="form-group">
+                    <input type="file" name="json" id="json" accept=".json" multiple>
+                </div>
+                <button class="btn btn-primary" onclick="convertToCSV()" id="convert">Convert to CSV</button>
+                <br>
+                <a download="converted" href='#' id="link" hidden>Download</a>
+                <button class="btn btn-primary button--top" onclick="document.getElementById('link').click()">Download</button>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="result">Result:</label>
+                    <textarea class="form-control" rows="20" id="result"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Convert CSV to JSON</h2>
+            </div>
+        </div>
+        <script src="./convertCSV.js"></script>
+</body>
+
+</html>

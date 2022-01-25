@@ -1,0 +1,23 @@
+{
+"Title": {
+"Balance": "Tài khoản của tôi",
+"Home": "Trang chủ",
+"Feed": "Bảng tin",
+"Bookmark": "Đánh dấu trang",
+"Events": "Sự kiện",
+"EditProfile": "Chỉnh sửa hồ sơ",
+"TalentAgency": "Đơn vị quản lý tài năng",
+"Settings": "Cài đặt",
+"Support": "Hỗ trợ",
+"PageNotFound": "Không tìm thấy trang",
+"LivestreamDashboard": "Livestream Dashboard"
+},
+"SocialType": {
+"Facebook": "Facebook",
+"Instagram": "Instagram",
+"Youtube": "Youtube"
+},
+"Creator": "Hoàng béo",
+"Star": "Siêu sao",
+"Nova": "Tùng"
+}
