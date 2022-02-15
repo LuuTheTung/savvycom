@@ -32,13 +32,9 @@ function validateForm() {
     alert("Phone must be filled out!");
   }
 
-  //   let role = document.forms["survey-form"]["role"].value;
   var role = $("#role").val();
   var userRecommend = $(":radio:checked").val();
-  //   var improved = $(":checkbox:checked").val();
   var improved = $("input[type='checkbox']:checked").val();
-    console.log(improved);
-
   var comment = $("#comment").val();
 
   console.log(
